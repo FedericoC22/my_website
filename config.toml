@@ -185,19 +185,19 @@ disqusShortname = ""
     #country = "Country"
 
   # Footer section
-  [params.footer]
+  #[params.footer]
     #enable = true
     #copyright = "Company Name"
 
     # Uses font awesome icons
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      url= "https://www.twitter.com"
-      label = "Twitter"
+    #[[params.footer.social]]
+      #icon = "fa-twitter"
+      #url= "https://www.twitter.com"
+      #label = "Twitter"
 
     [[params.footer.social]]
       icon = "fa-facebook"
-      url= "https://www.facebook.com"
+      url= "https://www.facebook.com/federico.carrara.7/"
       label = "Facebook"
 
     [[params.footer.social]]
