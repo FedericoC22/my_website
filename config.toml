@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Federico"
-    subtitle = "Welcome to my website :)"
+    subtitle = "Welcome to my XYZ :)"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
