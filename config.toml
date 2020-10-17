@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Federico"
-    subtitle = "Welcome to my portfolio of xyz!!"
+    subtitle = "Welcome to my portfolio of projects"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -88,44 +88,47 @@ disqusShortname = ""
 
   # Tiles Section
   [params.tiles]
+  
     enable = true
     # Display your showcases here.
     
+    
     [[params.tiles.showcase]]
-      title = "About me"
-      subtitle = "Work in progress"
-      image = "pic01.jpg"
+      title = "Where do people drink the most alcohol?"
+      subtitle = "My first project at LBS"
+      image = "PIC1.jpg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
-      title = "Homerwork 1"
-      subtitle = "work in progress"
-      image = "pic02.jpg"
+      title = "Who is better, Tim Burton and Steven Spielberg?"
+      subtitle = "Let's check their IMBD ratings"
+      image = "PIC2.jpg"
       url = "blogs/blog1"
 
     [[params.tiles.showcase]]
-      title = "Homework 2"
+      title = "Climate change and temperature anomalies"
       subtitle = "work in progress"
-      image = "pic03.jpg"
+      image = "pic05.jpg"
       url = "blogs/magna"
 
     [[params.tiles.showcase]]
-      title = "Homework 3"
+      title = "Final project"
       subtitle = "work in progres"
       image = "pic04.jpg"
       url = "blogs/ipsum"
+      
 
-    [[params.tiles.showcase]]
-      title = "Top reads I suggest"
-      subtitle = "Work in progress"
-      image = "pic05.jpg"
-      url = "blogs/ipsum"
+   # [[params.tiles.showcase]]
+    #  title = "Final project"
+     # subtitle = "Work in progress"
+      # image = "pic05.jpg"
+       # url = "blogs/ipsum"
 
-    [[params.tiles.showcase]]
-      title = "Final project"
-      subtitle = "work in progress"
-      image = "pic06.jpg"
-      url = "blogs/ipsum"
+    #[[params.tiles.showcase]]
+     # title = "Final project"
+      # subtitle = "work in progress"
+      # image = "pic06.jpg"
+      # url = "blogs/ipsum"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
@@ -138,13 +141,9 @@ disqusShortname = ""
   # Section Type Two
   [params.two]
     enable = true
-    title = "My time at LBS"
-    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
-    Mauris aliquet magna magna sed nunc rhoncus pharetra. 
-    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
-    Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
-    Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
-    buttonText = "Get Started"
+    title = "My experience with R at London Business School"
+    subtitle = """I hope will enjoy reading the porfolio of some of my projects for the Data Analytics class at London Business School. It was my first time coding, I struggled at times but I'm proud of what I've learnt and achieved. I reallly hope you will enjoy going through my projects."""
+    buttonText = "My projects"
     url = "blogs"
 
 
@@ -174,15 +173,15 @@ disqusShortname = ""
     title = "Email"
     email = "fcarrara.mfa2021@london.edu"
 
-   #[[params.contact.phone]]
-    #title = "Phone"
-    #phone = "(000) 000-0000 x1234"
+   [[params.contact.phone]]
+    title = "Phone"
+    phone = "(000) 000-0000 x1234"
 
-    #[[params.contact.address]]
-    #title = "Address"
-    #street = "Street"
+    [[params.contact.address]]
+    title = "Address"
+    street = "Regent's Park, London NW1 4SA"
     #city = "City, ST 00000"
-    #country = "Country"
+    country = "United Kingdom"
 
   # Footer section
   [params.footer]
@@ -195,24 +194,24 @@ disqusShortname = ""
       #url= "https://www.twitter.com"
       #label = "Twitter"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      url= "https://www.facebook.com/federico.carrara.7/"
-      label = "Facebook"
+   # [[params.footer.social]]
+      # icon = "fa-facebook"
+      # url= "https://www.facebook.com/federico.carrara.7/"
+      # label = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-instagram"
-      url= "https://www.instagram.com"
-      label = "Instagram"
+    # [[params.footer.social]]
+      # icon = "fa-instagram"
+      # url= "https://www.instagram.com"
+      # label = "Instagram"
     
     [[params.footer.social]]
       icon = "fa-github"
-      url= "https://www.github.com"
+      url= "https://github.com/FedericoC22/my_website.git"
       label = "GitHub"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
+      url= "www.linkedin.com/in/federico-carrara-604742130"
       label = "LinkedIn"
 
     [[params.footer.quicklinks]]
