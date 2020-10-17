@@ -100,17 +100,17 @@ disqusShortname = ""
       url = "blogs/blog1"
 
     [[params.tiles.showcase]]
-      title = "Who is better, Tim Burton and Steven Spielberg?"
-      subtitle = "Let's check their IMDb ratings"
-      image = "PIC2.jpg"
-      url = "blogs/blog1"
-
-    [[params.tiles.showcase]]
       title = "Climate change and temperature anomalies"
       subtitle = "work in progress"
       image = "pic05.jpg"
       url = "blogs/blog2"
-
+      
+    [[params.tiles.showcase]]
+      title = "Who is better, Tim Burton and Steven Spielberg?"
+      subtitle = "Let's check their IMDb ratings"
+      image = "PIC2.jpg"
+      url = "blogs/blog3"
+      
     [[params.tiles.showcase]]
       title = "Final project"
       subtitle = "work in progres"

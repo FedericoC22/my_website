@@ -1,5 +1,5 @@
 ---
-title: "Session 4: Homework 2"
+title: "Where do people drink the most alcohol"
 author: "Federico Carrara"
 date: "`r Sys.Date()`"
 output:
