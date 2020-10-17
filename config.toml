@@ -211,7 +211,7 @@ disqusShortname = ""
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "www.linkedin.com/in/federico-carrara-604742130"
+      url= "https://www.linkedin.com/in/federico-carrara-604742130/"
       label = "LinkedIn"
 
     [[params.footer.quicklinks]]
