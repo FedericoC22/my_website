@@ -97,7 +97,7 @@ disqusShortname = ""
       title = "Where do people drink the most alcohol?"
       subtitle = "My first project at LBS"
       image = "PIC1.jpg"
-      url = "blogs/aliquam"
+      url = "blogs/blog1"
 
     [[params.tiles.showcase]]
       title = "Who is better, Tim Burton and Steven Spielberg?"
