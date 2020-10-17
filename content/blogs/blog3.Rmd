@@ -1,5 +1,5 @@
 ---
-title: "Who is better, Tim Burton or Steven Spielberg?"
+title: "Who is better: Tim Burton or Steven Spielberg?"
 author: "Federico Carrara"
 date: "`r Sys.Date()`"
 output:
@@ -50,12 +50,13 @@ library(tidyquant)
 
 # IMDB ratings: Differences between directors
 
-Let's analyse the differences between directors by building confidence intervals
 
-```{r load-movies-data,echo=FALSE}
+```{r load-movies-data}
 movies <- read_csv(here::here("data", "movies.csv"))
+glimpse(movies)
 ```
 
+ 
 
 ```{r}
 
@@ -98,8 +99,6 @@ ggplot(directors_ci,
 
 
 ```
-
-Confidence intervals clearly show that Steven Spielberg has higher IMDb ratings 
 
 ```{r}
 
