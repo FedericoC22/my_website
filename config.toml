@@ -20,7 +20,7 @@ disqusShortname = ""
 
   # Provide your metadata here.
   name = "Federico Carrara"
-  description = "Italian, born and raised in Milan, I'm currently enrolled in the MFA program at London Business School"
+  description = "Federico Carrara Portfolio website"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Federico"
-    subtitle = "Welcome to my XYZ :)"
+    subtitle = "Welcome to my portfolio of xyz!!"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -47,15 +47,15 @@ disqusShortname = ""
       name = "Home"
       url = "#"
 
-    [[params.navigation.links]]
-      name = "Projects"
-      url = "Projects"
+    #[[params.navigation.links]]
+     # name = "Projects"
+      # url = "Projects"
 
-    [[params.navigation.links]]
+    # [[params.navigation.links]]
       #name = "Generic Blog"
       #url = "blogs/ipsum"
 
-    [[params.navigation.links]]
+   # [[params.navigation.links]]
      # name = "Elements"
     #  url = "elements.html"
 
@@ -72,9 +72,9 @@ disqusShortname = ""
       url = "blogs"
 
     # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
+    #[[params.navigation.button2]]
+     # name = "Log In"
+      # url = "#"
 
 
   # Banner section
@@ -82,8 +82,8 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Federico"
-    subtitle = "An italian student at London Business School. I'm passionate about art and I'm an avid reader. Leave me a message if you want ;)"
-    buttonText = "Get Started"
+    subtitle = "I am an italian student at London Business School. I'm passionate about art and I'm an avid reader. Leave me a message if you want ;)"
+    buttonText = "My projects"
 
 
   # Tiles Section
@@ -101,7 +101,7 @@ disqusShortname = ""
       title = "Homerwork 1"
       subtitle = "work in progress"
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "blogs/blog1"
 
     [[params.tiles.showcase]]
       title = "Homework 2"
