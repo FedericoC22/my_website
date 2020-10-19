@@ -101,12 +101,12 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Climate change and temperature anomalies"
-      subtitle = "work in progress"
-      image = "pic05.jpg"
+      subtitle = "An impressive analysis"
+      image = "PIC7.jpg"
       url = "blogs/blog2"
       
     [[params.tiles.showcase]]
-      title = "Who is better, Tim Burton and Steven Spielberg?"
+      title = "Who is better, Tim Burton or Steven Spielberg?"
       subtitle = "Let's check their IMDb ratings"
       image = "PIC2.jpg"
       url = "blogs/blog3"
