@@ -1,5 +1,5 @@
 ---
-title: "Who is better: Tim Burton or Steven Spielberg?"
+title: "IMDB ratings: differences between directors?"
 author: "Federico Carrara"
 date: "`r Sys.Date()`"
 output:
@@ -47,16 +47,14 @@ library(tidyquant)
 ```
 
 
-
-# IMDB ratings: Differences between directors
-
+Let's first analyse the movies database
 
 ```{r load-movies-data}
 movies <- read_csv(here::here("data", "movies.csv"))
 glimpse(movies)
 ```
 
- 
+ By building confidence intervals we can understand if Spielberg and Burton have similar ratings
 
 ```{r}
 
@@ -99,6 +97,8 @@ ggplot(directors_ci,
 
 
 ```
+
+Spielberg is the clear winner, let's see if we get the same result using the infer package
 
 ```{r}
 
