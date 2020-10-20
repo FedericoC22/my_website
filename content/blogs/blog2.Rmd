@@ -65,13 +65,13 @@ tidyweather <- weather %>%
 
 ```
 
-# Plotting Information
+# Climate change is real!
 
 
 > In the following chunk of code, I used the `eval=FALSE` argument, which does not run a chunk of code; I did so that you can knit the document before tidying the data and creating a new dataframe `tidyweather`. When you actually want to run this code and knit your document, you must delete `eval=FALSE`, **not just here but in all chunks were `eval=FALSE` appears.**
 
 
-```{r scatter_plot, eval=TRUE}
+```{r scatter_plot}
 
 tidyweather <- tidyweather %>%
   mutate(date = ymd(paste(as.character(Year), Month, "1")),
@@ -92,10 +92,10 @@ ggplot(tidyweather, aes(x=date, y = delta))+
 
 ```
 
+# Weather anomalies are evident in all months
 
-```{r facet_wrap, echo=FALSE}
+```{r facet_wrap}
 
-#Your code goes here...
 ggplot(tidyweather, aes(x=year, y = delta))+
   geom_point()+
   geom_smooth(color="red") +
@@ -109,12 +109,13 @@ ggplot(tidyweather, aes(x=year, y = delta))+
   theme_clean()
 ```
 
+# Let's Check Density Plot for Monthly Temperature Anomalies
 
 ```{r intervals}
 
 comparison <- tidyweather %>% 
   filter(Year>= 1881) %>%     #remove years prior to 1881
-  #create new variable 'interval', and assign values based on criteria below:
+  
   mutate(interval = case_when(
     Year %in% c(1881:1920) ~ "1881-1920",
     Year %in% c(1921:1950) ~ "1921-1950",
@@ -137,6 +138,8 @@ ggplot(comparison, aes(x=delta, fill=interval))+
   )
 
 ```
+
+# It's scary... climate change has been accelerating exponentially
 
 ```{r averaging}
 

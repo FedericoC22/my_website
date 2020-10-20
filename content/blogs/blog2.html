@@ -1,7 +1,7 @@
 ---
 title: "Climate change and temperature anomalies"
 author: "Federico Carrara"
-date: "2020-10-17"
+date: "2020-10-20"
 output:
   html_document:
     theme: flatly
@@ -14,8 +14,8 @@ output:
 
 
 
-<div id="plotting-information" class="section level2">
-<h2>Plotting Information</h2>
+<div id="climate-change-is-real" class="section level1">
+<h1>Climate change is real!</h1>
 <blockquote>
 <p>In the following chunk of code, I used the <code>eval=FALSE</code> argument, which does not run a chunk of code; I did so that you can knit the document before tidying the data and creating a new dataframe <code>tidyweather</code>. When you actually want to run this code and knit your document, you must delete <code>eval=FALSE</code>, <strong>not just here but in all chunks were <code>eval=FALSE</code> appears.</strong></p>
 </blockquote>
@@ -36,10 +36,27 @@ ggplot(tidyweather, aes(x=date, y = delta))+
   ) +
   theme_economist()</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/scatter_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+</div>
+<div id="weather-anomalies-are-evident-in-all-months" class="section level1">
+<h1>Weather anomalies are evident in all months</h1>
+<pre class="r"><code>ggplot(tidyweather, aes(x=year, y = delta))+
+  geom_point()+
+  geom_smooth(color=&quot;red&quot;) +
+  theme_bw() +
+  labs (
+    title = &quot;Weather anomalies are evident in all months&quot;,
+    x = &quot;Year&quot;,
+    y = &quot;&quot;
+  ) +
+  facet_wrap(~month, scales = &#39;free&#39;, labeller = &#39;label_value&#39;) +
+  theme_clean()</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/facet_wrap-1.png" width="648" style="display: block; margin: auto;" /></p>
+</div>
+<div id="lets-check-density-plot-for-monthly-temperature-anomalies" class="section level1">
+<h1>Let’s Check Density Plot for Monthly Temperature Anomalies</h1>
 <pre class="r"><code>comparison &lt;- tidyweather %&gt;% 
   filter(Year&gt;= 1881) %&gt;%     #remove years prior to 1881
-  #create new variable &#39;interval&#39;, and assign values based on criteria below:
+  
   mutate(interval = case_when(
     Year %in% c(1881:1920) ~ &quot;1881-1920&quot;,
     Year %in% c(1921:1950) ~ &quot;1921-1950&quot;,
@@ -55,6 +72,9 @@ ggplot(tidyweather, aes(x=date, y = delta))+
     y     = &quot;Density&quot;         #changing y-axis label to sentence case
   )</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/density_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+</div>
+<div id="its-scary-climate-change-has-been-accelerating-exponentially" class="section level1">
+<h1>It’s scary… climate change has been accelerating exponentially</h1>
 <pre class="r"><code>#creating yearly averages
 average_annual_anomaly &lt;- tidyweather %&gt;% 
   group_by(Year) %&gt;%   #grouping data by Year

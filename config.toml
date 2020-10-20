@@ -83,7 +83,7 @@ disqusShortname = ""
     # the 'static/img' folder.
     title = "Hi, my name is Federico"
     subtitle = "I am an italian student at London Business School. I'm passionate about art and I'm an avid reader. Leave me a message if you want ;)"
-    buttonText = "My projects"
+    buttonText = "Get started"
 
 
   # Tiles Section
@@ -92,31 +92,33 @@ disqusShortname = ""
     enable = true
     # Display your showcases here.
     
-    
-    [[params.tiles.showcase]]
-      title = "Where do people drink the most alcohol?"
-      subtitle = "My first project at LBS"
-      image = "PIC1.jpg"
-      url = "blogs/blog1"
+
 
     [[params.tiles.showcase]]
       title = "Climate change and temperature anomalies"
-      subtitle = "An impressive analysis"
+      subtitle = "An impressive analysis made using R"
       image = "PIC7.jpg"
       url = "blogs/blog2"
-      
+
+    [[params.tiles.showcase]]
+      title = "A volunteering association I support"
+      subtitle = "We need your help!"
+      image = "PIC10.jpeg"
+      url = "post/blog6"
+    
+
     [[params.tiles.showcase]]
       title = "Who is better, Tim Burton or Steven Spielberg?"
       subtitle = "My favourite movies directors by far"
       image = "PIC2.jpg"
       url = "blogs/blog3"
-      
+
     [[params.tiles.showcase]]
-      title = "A volunteering association I support"
-      subtitle = "Missioni MVC"
-      image = "PIC10.jpeg"
-      url = "post/blog6"
-      
+      title = "Where do people drink the most alcohol?"
+      subtitle = "My first project at LBS"
+      image = "PIC1.jpg"
+      url = "blogs/blog1"
+            
 
    # [[params.tiles.showcase]]
     #  title = "Final project"
@@ -143,7 +145,7 @@ disqusShortname = ""
     enable = true
     title = "My experience with R at London Business School"
     subtitle = """I hope will enjoy reading the porfolio of some of my projects for the Data Analytics class at London Business School. It was my first time coding, I struggled at times but I'm proud of what I've learnt and achieved. I reallly hope you will enjoy going through my projects."""
-    buttonText = "My projects"
+    buttonText = "Get started"
     url = "blogs"
 
 
