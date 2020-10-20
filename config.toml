@@ -107,15 +107,15 @@ disqusShortname = ""
       
     [[params.tiles.showcase]]
       title = "Who is better, Tim Burton or Steven Spielberg?"
-      subtitle = "Let's check their IMDb ratings"
+      subtitle = "My favourite movies directors by far"
       image = "PIC2.jpg"
       url = "blogs/blog3"
       
     [[params.tiles.showcase]]
-      title = "Final project"
-      subtitle = "work in progres"
-      image = "pic06.jpg"
-      url = "blogs/ipsum"
+      title = "A volunteering association I support"
+      subtitle = "Missioni MVC"
+      image = "PIC10.jpeg"
+      url = "post/blog6"
       
 
    # [[params.tiles.showcase]]

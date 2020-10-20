@@ -65,7 +65,7 @@ tidyweather <- weather %>%
 
 ```
 
-## Plotting Information
+# Plotting Information
 
 
 > In the following chunk of code, I used the `eval=FALSE` argument, which does not run a chunk of code; I did so that you can knit the document before tidying the data and creating a new dataframe `tidyweather`. When you actually want to run this code and knit your document, you must delete `eval=FALSE`, **not just here but in all chunks were `eval=FALSE` appears.**

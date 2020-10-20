@@ -52,13 +52,17 @@ library(lubridate) #to handle dates
 
 Back in 2014, [fivethiryeight.com](https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/) published an article on alchohol consumption in different countries.
 
+The purpose of this analysis is to make some clear outputs out of this complex database. 
+
+Let's work on the "Drinks" database!
+
 ```{r, load_alcohol_data}
 library(fivethirtyeight)
 data(drinks)
 
 ```
 
-
+## Top 25 Beer Consuming Countries 
 
 ```{r beer_plot}
 drinks %>%
@@ -70,6 +74,7 @@ drinks %>%
 
 ```
 
+## Top 25 Wine Consuming Countries 
 
 ```{r wine_plot}
 
@@ -81,6 +86,7 @@ drinks %>%
   geom_col()
 
 ```
+## Top 25 Wine Consuming Countries 
 
 ```{r spirit_plot}
 drinks %>% 

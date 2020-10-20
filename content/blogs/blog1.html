@@ -1,7 +1,7 @@
 ---
 title: 'Where do people drink the most beer, wine and spirits?'
 author: "Federico Carrara"
-date: "2020-10-17"
+date: "2020-10-19"
 output:
   html_document:
     theme: flatly
@@ -17,8 +17,12 @@ output:
 
 
 <p>Back in 2014, <a href="https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/">fivethiryeight.com</a> published an article on alchohol consumption in different countries.</p>
+<p>The purpose of this analysis is to make some clear outputs out of this complex database.</p>
+<p>Let’s work on the “Drinks” database!</p>
 <pre class="r"><code>library(fivethirtyeight)
 data(drinks)</code></pre>
+<div id="top-25-beer-consuming-countries" class="section level2">
+<h2>Top 25 Beer Consuming Countries</h2>
 <pre class="r"><code>drinks %&gt;%
   arrange(desc(beer_servings)) %&gt;% 
   head(25) %&gt;% 
@@ -26,13 +30,17 @@ data(drinks)</code></pre>
   labs(title = &quot;Top 25 Beer Consuming Countries&quot;, x = &#39;Country&#39;, y = &#39;Beer Servings&#39;) +
   geom_col()</code></pre>
 <p><img src="/blogs/blog1_files/figure-html/beer_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+</div>
+<div id="top-25-wine-consuming-countries" class="section level2">
+<h2>Top 25 Wine Consuming Countries</h2>
 <pre class="r"><code>drinks %&gt;% 
   arrange(desc(wine_servings)) %&gt;% 
   head(25) %&gt;% 
   ggplot(aes(x = wine_servings, y = reorder(country, -wine_servings))) +
   labs(title = &quot;Top 25 Wine Consuming Countries&quot;, x = &#39;Country&#39;, y = &#39;Wine Servings&#39;) +
   geom_col()</code></pre>
-<p><img src="/blogs/blog1_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/blogs/blog1_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" />
+## Top 25 Wine Consuming Countries</p>
 <pre class="r"><code>drinks %&gt;% 
   arrange(desc(spirit_servings)) %&gt;% 
   head(25) %&gt;% 
@@ -45,3 +53,4 @@ data(drinks)</code></pre>
 The beer consumption graph also displays quite predictable results when one looks at the countries within it. As expected, many of the countries that make up the top 15 are Anglo Saxon (US/Ireland/Australia) or Central European (Germany/Poland/Netherlands etc), and this accurately reflects the drinking culture prevalent in those nations. Namibia’s position as the top country can be explained by its German links and culture, having spent decades under German colonisation.
 Finally, the results displayed in the spirit consumption graph can be attributed to the different spirits produced in each of the regions present. The large quantity of Carribean countries in the graph is likely due to the high levels of production/consumption of rum that occurs in the region, combined with various cocktails due to its popularity as a holiday destination. The presence of the Russian Federation and other Eastern European countries can likely be attributed to the production and consumption of vodka, which started in Russia and was adopted by its satellite states during the period of the USSR.</p>
 </blockquote>
+</div>
